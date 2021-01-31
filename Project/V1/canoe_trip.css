@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*
+    Author:     Ashley Christophel
+    Date:       01/20/2021
+    Assignment: V1
+    File:       CSS Layout File
+    Filename:   canoe_trip.css
+*/
+
+/* Structural Styles */
+
+html {
+    background-color: rgb(38, 62, 14);
+    background-color: hsl(90, 63.2%, 14.9%); /* M2LO14 - Here I used progressive enhancement to set the background color of the html background. HSL will take precedence over the RGB, unless a browser does not support HSL, in which case RGB color would be used. */
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 100%; /* M2LO13 - I set textual element specifications, aligned text, font, and font size for all of the html pages here.*/
+}
+
+body {
+    background-color: rgb(158,  127, 79);
+    background-color: hsl(36, 33.3%, 46.5%); /* M2LO15 - The background color of the body is shown here in both rgb and hsl. */
+}
+
+section {
+    background-color: rgb(239, 226, 195);
+    background-color: hsl(42, 57.9%, 85.1%);
+    color: black; /* M2LO3 - I have used style inheritance to set all the text in the section element to black without having to set the color in each paragraph.*/
+}
+
+/* Heading Styles */
+
+h1 {
+    color: rgb(38, 62, 14);
+    color: hsl(90, 63.2%, 14.9%);
+    font-size: 200%;
+	text-decoration: none;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%); /* M2LO3 - I have used style precedence to set the color for the headers.*/
+
+	font-size: 150%;
+	text-decoration: none;
+}
+
+p {
+    font-family: 'Times New Roman', serif;
+}
+
+/* Navigation Styles */
+
+body header nav {
+    background-color: rgb(180, 191, 65);
+    background-color: hsl(65, 49.6%, 50.2%);
+}
+
+body header ul {
+    list-style-type: none; /* M2LO12 - Changed presentation by removing the default bullet points. */
+}
+
+nav a {
+    color: rgb(38, 62, 14);
+    color: hsl(90, 63.2%, 14.9%);
+    text-decoration:none;
+    display: block;
+    text-align: center;
+}
+
+/* Section Styles */
+
+
+
+
+/* Description Styles */
