@@ -1,0 +1,81 @@
+@charset "utf=8";
+
+/*
+    Author:     Ashley Christophel
+    Assignment: V2
+    Date:       01/31/2021
+    Filename:   divstyles.css
+*/
+
+
+/* Div Styles */
+
+div.col-3-4 {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    background-color: rgb(239, 226, 195);            /* M2LO14 - Example of progressive enhancement. Browsers that recognize hsl will use the last background color specified, while older browsers will use rgb */
+    background-color: hsl(42, 59.7%, 85.1%);  
+}
+
+/*
+    border-width: 2px;
+    border-style: double;
+    border-color: teal; 
+*/
+
+div.col-1-4 {                                           /* M3LO2 - Example of floating element. The div element is floated to the right, so it stays next to the div element to the left instead of moving under it when the browser is resized. */   
+    float: right;
+    width: 25%;
+    background-color: rgb(116, 142, 64);
+    background-color: hsl(80, 37.9%, 40.4%);
+    padding: 10px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: rgb(44, 80, 88);
+}
+
+/*
+    border-width: 2px;
+    border-style: double;
+    border-color: yellow;
+*/
+
+div.col-4-4 { 
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(239, 226, 195);
+    background-color: hsl(42, 59.7%, 85.1%);
+}
+
+/*
+    border-width: 2px;
+    border-style: double;
+    border-color: coral; 
+*/
+
+div.col-2-4 {
+    width: 75%;
+    padding: 10px;
+}
+
+/*
+    border-width: 2px;
+    border-style: double;
+    border-color: hotpink;
+*/
+
+div.row > footer {
+    position: fixed;                                    /* M3LO9 - Example of fixed positioning. Setting the footer to fixed positioning adheres the footer to the bottom of the browser permanently */
+    bottom: 0px;
+    background: linear-gradient(rgb(239, 226, 195),
+    rgb(239, 226, 195), rgb(44, 80, 88));           /* M4LO4 - Example of gradients */
+    width: 65%;
+    padding: 5px;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: purple;
+*/

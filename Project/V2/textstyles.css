@@ -1,0 +1,196 @@
+@charset "utf=8";
+@font-face {
+    font-family: 'Varela Round';
+	src: url('varela-round-v13-latin-regular.woff2') format('woff2'),
+         url('varela-round-v13-latin-regular.woff') format('woff'),
+         url('varela-round-v13-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+	src: url('roboto-v20-latin-regular.woff2') format('woff2'),
+         url('roboto-v20-latin-regular.woff') format('woff'),
+         url('roboto-v20-latin-regular.ttf') format('truetype');
+}
+
+/*
+    Author:     Ashley Christophel
+    Assignment: V2
+    Date:       01/31/2021
+    Filename:   textstyles.css
+*/
+
+
+/* Typographical Structural Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: magenta;
+*/
+
+p {
+    font-size: 100%;
+    line-height: 20px;
+    text-align: left;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+ol {                                                        /* M1LO7 - Example of an ordered list */
+    font-size: 100%;
+    list-style-type: circle;
+    line-height: 20px;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: blue;
+*/
+
+/* Topigraphical Figure Styles */
+
+figure {
+    font-style: italic;
+    font-size: smaller;
+  }
+
+/* Topigraphical Heading Styles */
+
+h1 {
+    color: rgb(44, 80, 88);
+    color: hsl(191, 33.3%, 25.9%);
+    font-family: 'Varela Round', serif;
+    font-size: 500%;
+    line-height: 75px;
+    text-align: left;
+    text-shadow: rgb(116, 142, 64) -4px 3px 5px;         /* M4LO5 - Example of text shadow. Shadows make images and text appear three dimensional and give depth visually. */
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: blue;
+*/
+
+h2 {
+    color: rgb(116, 142, 64);
+    color: hsl(80, 37.9%, 40.4%);
+    font-family:  'Varela Round', serif;
+    font-size: 250%;
+    line-height: 50px;
+    text-shadow: rgb(51, 51, 51) -2px 2px 5px;   
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: purple; 
+*/
+
+h3 {
+    color: rgb(157, 68, 74);                             /* M2LO15 - Example of applying color with CSS */
+    color: hsl(356, 39.6%, 44.1%); 
+    font-family:  'Varela Round', serif;
+    font-size: 150%;
+    line-height: 30px;
+    text-shadow: rgb(51, 51, 51) -1px 1px 3px;       
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: yellowgreen; 
+*/
+
+
+/* Topigraphical Div Styles */
+
+div.row > footer {
+    color: rgb(44, 80, 88);
+    color: hsl(191, 33.3%, 25.9%);
+    font-size: 85%;
+    font-weight: bold;
+}
+
+
+/* Topigraphical Main Navigational Styles */
+
+nav.mainNavigation li {                                    /* M2LO6 - Example of a class selector */
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: goldenrod;
+*/
+
+nav.mainNavigation a:link {                                /* LINK PSEUDOCLASS SELECTS UNVISITED LINKS */
+    color: rgb(250, 247, 239);
+    color: hsl(44, 52.4%, 95.9%);
+ }
+
+ /* border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+ nav.mainNavigation a:visited {                            /* VISITED PSEUDOCLASS SELECTS PREVIOUSLY VISITED LINKS */
+    color: rgb(44, 80, 88);
+    color: hsl(191, 33.3%, 25.9%);
+ }
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+nav.mainNavigation a:hover {                               /* HOVER PSEUDOCLASS SELECTS CURRENTLY HOVERED LINKS */
+    color: rgb(239, 226, 195);
+    color: hsl(42, 57.9%, 85.1%);
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+nav.mainNavigation a:active {                              /* ACTIVE PSEUDOCLASS SELECTS CURRENTLY ACTIVATED LINKS */
+    text-decoration: underline;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+
+/* Topigraphical URL Scheme Styles */
+
+a[href^="mailto"] {                                        /* M2LO7 - Example of CSS attribute selector other than class or id */
+    color: rgb(250, 247, 239);
+    color: hsl(44, 52.4%, 95.9%);                        /* CHANGES PROPERTIES OF THE MAILTO */
+    text-decoration: none;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
+
+a[href^="tel"], [href^="sms"] {                            /* CHANGES PROPERTIES OF THE TEL AND SMS */
+    color: rgb(250, 247, 239);
+    text-decoration: none;
+}
+
+/*  border-width: 2px;
+    border-style: double;
+    border-color: coral;
+*/
