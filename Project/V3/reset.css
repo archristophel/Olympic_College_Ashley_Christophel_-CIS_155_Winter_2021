@@ -9,7 +9,7 @@
 
 /* Structural Styles */
 
-html, head, body, header, nav, ul, li, div, figure, p, img {        /* M3LO1 - Example of reset stylesheet */
+html, head, body, header, nav, ul, li, div, figure, p, ol, img {        /* M3LO1 - Example of reset stylesheet */
     display: block;
 }
 
@@ -17,7 +17,7 @@ html, head, body, header, nav, ul, li, div, figure, p, img {        /* M3LO1 - E
 /* Typographic Styles */
 
 body, footer, header, html, img,
-li, main, div, nav, ul, ol {
+li, main, nav, ul, div {
     background: transparent;
     margin: 0;
     padding: 0;
@@ -28,6 +28,15 @@ li, main, div, nav, ul, ol {
     box-sizing: border-box;    
 }
 
-body {                                                                 /* SETS THE DEFAULT LINE HEIGHT TO ELEMENT */
+nav ul {                                                                /* REMOVES LIST MARKERS FROM ALL LIST ITEMS IN NAV LISTS */
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {                                                                 /* REMOVES LIST MARKERS FROM ALL HYPERLINK LIST ITEMS IN NAV LISTS */
+    text-decoration: none;
+}
+
+body {                                                                  /* SETS THE DEFAULT LINE HEIGHT TO ELEMENT */
     line-height: 0;
 }

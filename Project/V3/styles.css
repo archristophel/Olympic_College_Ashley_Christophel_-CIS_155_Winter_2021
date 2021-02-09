@@ -39,13 +39,6 @@ body {
     border-color: magenta;
 */
 
-aside {
-    float: right;
-}
-
-section {                                                                                   /* M3LO3 - Example of clearing float. This causes the section to begin after its right edge has cleared the aside element */
-    clear: right;
-}
 
 /* Body Header Styles */
 
@@ -92,3 +85,13 @@ nav.mainNavigation li {                                                         
     border-style: double;
     border-color: goldenrod;
 */
+
+/* Pulldown Menu Styles */
+
+ul.submenu {
+    display: none;
+}
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
+}

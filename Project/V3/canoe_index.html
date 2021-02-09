@@ -11,28 +11,65 @@
 
     <meta charset="utf-8" />
     <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="reset.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    <link href="divstyles.css" rel="stylesheet" />                                                          
+    <link href="divstyles.css" rel="stylesheet" />                                                          <!-- M2LO4 - Example of external stylesheet -->
     <link href="textstyles.css" rel="stylesheet" />                                                         <!-- M1LO8 - Example of external stylesheet -->
     <title>Canoe Trip Index</title>
 </head>
 
 <body>
     <header>
-    <a href="https://www.riverviewcampground.com/"><img src="pic6.png" alt="group" /></a>                   <!-- M1LO9 - Example of an inline image --><!-- M1LO13 - Example of external hyperlink -->
+        <img src="" alt="" />         <!-- M1LO9 - Example of an inline image --><!-- M1LO13 - Example of external hyperlink -->
         <nav class="mainNavigation">
-            <ul>                                                                                            <!-- M1LO12 - Example of navigation using unordered list -->
-                <li><a href="canoe_index.html">Home</a></li>                                                <!-- M1LO13 - Example of site navigation hyperlink -->
+            <ul class="mainmenu">                                                                                            <!-- M1LO12 - Example of navigation using unordered list -->
+                <li><a href="canoe_index.html">Home</a></li>
+                <li><a href="#" class="submenuTitle">Classes &#9654;</a>
+                    <ul class="submenu">
+                       <li><a href="#">Infants</a></li>
+                       <li><a href="#">Toddlers</a></li>
+                       <li><a href="tf_prek.html">Pre-K</a></li>
+                       <li><a href="#">After School</a></li>
+                    </ul>
+                 </li>
+                 <li><a href="#" class="submenuTitle">Parents &#9654;</a>
+                    <ul class="submenu">
+                        <li><a href="tf_articles.html">Articles</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Legal</a></li>                 
+                    </ul>
+                </li>                                                    <!-- M1LO13 - Example of site navigation hyperlink -->
                 <li><a href="register.html">Register</a></li>
+                <li><a href="#" class="submenuTitle">About Us &#9654;</a>
+                    <ul class="submenu">
+                       <li><a href="#">History</a></li>
+                       <li><a href="#">Accreditation</a></li>
+                       <li><a href="#">Reviews</a></li>
+                    </ul>
+                 </li>
                 <li><a href="options.html">Options</a></li>
                 <li><a href="info.html">Info</a></li>
                 <li><a href="directions.html">Directions</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>                                                     
+                <li><a href="about.html">About</a></li>                                                     <!-- M1LO13 - Example of site navigation hyperlink -->
             </ul>
         </nav>          
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="row">
     <div class="col-3-4">                                                                                   <!-- FIRST ROW -->
@@ -52,19 +89,18 @@
             <p>Text: <a href="sms:+15555555555">(636) 555-3226</a></p>            
     </div>
 </div>
-<div class="row">                                                                                           <!-- M3LO6 - Example of formatting a grid. Grids allow elements to be aligned in rows and columns -->
+<div class="row">                                                                                           <!-- SECOND ROW A -->
     <div class="col-4-4">
         <p>Here is a paragraph about the dates and some general info leading into pricing:</p>   
         <div class="row">                                                                                   <!-- SECOND ROW B -->
             <div class="col-2-4">     
                 <h3>Total Price Per Couple</h3>
                 <p>This includes:</p>
-                <ol class="ol1">                                                                                        
+                <ol>                                                                                        <!-- M1LO7 - Example of an ordered list -->
                     <li>Camping for 2 Nights (Friday and Saturday)</li>
                     <li>Canoe Rental for Greenwood (Long Trip)</li>
                     <li>Community Firewood</li>
                     <li>Games & Prizes</li>
-                    <p><a href="options.html#options">Customize your trip!</a></p>                        <!-- M1LO13 - Example of targeted location using id hyperlink -->
                 </ol>
             </div>  
         </div>

@@ -36,28 +36,18 @@ body {
 p {
     font-size: 100%;
     line-height: 20px;
-    text-align: inherit;
+    text-align: left;
 }
 
-aside {
-    text-align: right;                                                                  /* M2LO3 - Example of style precedence, as the nestled paragraph also aligns right. */
-}
 /*  border-width: 2px;
     border-style: double;
     border-color: coral;
 */
 
-ol {                                                                                   /* M2LO12 - Example of how CSS can change presentation of page elements */
+ol {                                                        /* M1LO7 - Example of an ordered list */
     font-size: 100%;
     list-style-type: circle;
     line-height: 20px;
-    font-size: 100%;
-}
-
-
-ol > li {
-    text-decoration: black;
-    list-style-type: disc;
 }
 
 /*  border-width: 2px;
@@ -70,11 +60,7 @@ ol > li {
 figure {
     font-style: italic;
     font-size: smaller;
-}
-
-ol > li::first-letter {                                     /* M2LO11 - Example of pseudo-element selector */
-    font-size: 120%;
-}
+  }
 
 /* Topigraphical Heading Styles */
 
@@ -96,7 +82,7 @@ h1 {
 h2 {
     color: rgb(116, 142, 64);
     color: hsl(80, 37.9%, 40.4%);
-    font-family:  'Varela Round', serif;                    /* M2LO13 - Example of how CSS can change presentation of textual elements */
+    font-family:  'Varela Round', serif;
     font-size: 250%;
     line-height: 50px;
     text-shadow: rgb(51, 51, 51) -2px 2px 5px;   
@@ -116,11 +102,6 @@ h3 {
     text-shadow: rgb(51, 51, 51) -1px 1px 3px;       
 }
 
-h4 {
-    color: black;
-}
-
-
 /*  border-width: 2px;
     border-style: double;
     border-color: yellowgreen; 
@@ -134,7 +115,6 @@ div.row > footer {
     color: hsl(191, 33.3%, 25.9%);
     font-size: 85%;
     font-weight: bold;
-    text-align: center;
 }
 
 
@@ -151,9 +131,9 @@ nav.mainNavigation li {                                    /* M2LO6 - Example of
     border-style: double;
     border-color: goldenrod;
 */
- 
-nav.mainNavigation a:link {                                /* M2LO11 - Example of pseudo-class selector */
-    color: rgb(250, 247, 239);                           /* LINK PSEUDOCLASS SELECTS UNVISITED LINKS */
+
+nav.mainNavigation a:link {                                /* LINK PSEUDOCLASS SELECTS UNVISITED LINKS */
+    color: rgb(250, 247, 239);
     color: hsl(44, 52.4%, 95.9%);
  }
 
@@ -214,37 +194,3 @@ a[href^="tel"], [href^="sms"] {                            /* CHANGES PROPERTIES
     border-style: double;
     border-color: coral;
 */
-
-
-div > ol > li {
-        text-align: left;
-        font-family: 'Varela Round', sans-serif;
-        font-size: 100%;
-        font-weight: bold;
-        list-style-type: circle;
-}
-
-div a:link {
-    color: rgb(44, 80, 88);
-    color: hsl(191, 33.3%, 25.9%);
-}
-    
-div a:visited {
-    color: rgb(157, 68, 74);
-    color: hsl(356, 39.6%, 44.1%);
-}
-
-div a:hover {
-    color: rgb(116, 142, 64);
-    color: hsl(80, 37.9%, 40.4%);
-    }
-
-div a:active {
-    text-decoration: underline;
-}
-
-.ol2 {                                                      /* M2LO3 - Example of style precedence */
-    color: rgb(44, 80, 88);
-    color: hsl(191, 33.3%, 25.9%);
-}
-
