@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+<!--
 
-    <!-- 
-        Author:     Ashley Christophel
-        Assignment: V2
-        Date:       01/30/2021
-        Filename:   about.html
-    -->
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   about.html
+
+-->
 
     <meta charset="utf-8" />
-    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI">
+    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="reset.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
-    <link href="divstyles.css" rel="stylesheet" />
-    <link href="textstyles.css" rel="stylesheet" />
+    <link href="mediaqueriesstyles.css" rel="stylesheet" />
     <title>Canoe Trip About</title>
+    
 </head>
 
 <body>
     <header>
-        <a href="https://pixabay.com/users/stviod-9653/"><img src="canoeicarus.png" alt="canoes" /></a>
-        <nav class="mainNavigation">
+        <img src="headerimg.png" alt="group" />
+        <nav class="horizontal">
             <ul>
                 <li><a href="canoe_index.html">Home</a></li>
                 <li><a href="register.html">Register</a></li>
@@ -31,54 +33,63 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-        </nav>          
+        </nav>
     </header>
-    
-<div class="row">                                                                                           <!-- FIRST ROW -->
-    <div class="col-4-4">
-        <h1>Annual River Trip</h1>
-        <h2>About</h2>
-    </div>
-</div>
-<div class="row">                                                                                           <!-- SECOND ROW A -->
-    <div class="col-4-4">
-        <p>I am making this website for my CIS155 class project. 
-           I am going to use this site as an informational hub for an annual trip.</p>   
-        <div class="row">                                                                                   <!-- SECOND ROW B -->
-            <div class="col-2-4">     
-                <h3>List of Modifications</h3>
-                <p>V1 01/17/2021</p>
-                <ol style="text-align: left;">                                                              <!-- M1LO7 - Here I have used an ordered list to display page modifications.-->
-                    <li>Created index_canoe_trip.html</li>
-                    <li>Created about_canoe_trip.html</li>
-                    <li>Created canoe_trip.css</li>
-                    <li>Added navigation header to index_canoe_trip.html, about_canoe_trip.html</li>
-                    <li>Added canoe_photo1.png to navigation header</li>
-                    <li>Added CSS colors, fonts</li>
-                </ol>
-                <p>V2 02/05/2021</p>    
-                <ol style="text-align: left;">                                                              <!-- M2LO4 - Here is an example of using inline style to align the ordered list to the left. -->
-                    <li>Renamed index_canoe_trip.html to index.html</li>
-                    <li>Renamed about_canoe_trip.html to about.html</li>
-                    <li>Renamed canoe_trip.css to styles.css</li>
-                    <li>Creatred remaining html files</li>
-                    <li>Divided styles.css into three css sheets</li>
-                    <li>Added div elements to html and css files</li>
-                    <li>Set heading fonts, sizes, colors</li>
-                    <li>Added gallery image and caption</li>
-                    <li>Added text shadows, body shadows, footer gradient, nav rounded borders</li>
-                </ol>    
-            </div>
-        </div>
-    </div>       
-</div>
 
-<div class="row">                                                                                           <!-- THIRD ROW -->
-    <footer>
-        <p>designed by &#9909; archristophel</p>
-        <p>Questions or Comments about the site? Email:
-        <a href="mailto:example@example.com?subject=Canoe Trip">example@example.com</a></p>
-    </footer>
-</div>
+    <div class="containerHeader2">
+        <div class="itemHeadings2">
+            <p>I am making this website for my CIS155 class project. 
+            I am going to use this site as an informational hub for an annual trip.</p>
+            <h3>List of Modifications</h3>
+        </div>
+    </div>
+    <div class="containerAbout">
+        <div class="itemV1">
+            <p>V1 01/17/2021</p>
+            <ol>
+                <li>Created index_canoe_trip.html</li>
+                <li>Created about_canoe_trip.html</li>
+                <li>Created canoe_trip.css</li>
+                <li>Added navigation header to index_canoe_trip.html, about_canoe_trip.html</li>
+                <li>Added canoe_photo1.png to navigation header</li>
+                <li>Added CSS colors, fonts</li>
+            </ol>
+        </div>
+        <div class="itemV2">                
+            <p>V2 02/05/2021</p>    
+            <ol>
+                <li>Renamed index_canoe_trip.html to index.html</li>
+                <li>Renamed about_canoe_trip.html to about.html</li>
+                <li>Renamed canoe_trip.css to styles.css</li>
+                <li>Creatred remaining html files</li>
+                <li>Divided styles.css into three css sheets</li>
+                <li>Added div elements to html and css files</li>
+                <li>Set heading fonts, sizes, colors</li>
+                <li>Added gallery image and caption</li>
+                <li>Added text shadows, body shadows, footer gradient, nav rounded borders</li>
+            </ol>    
+        </div>
+        <div class="itemV3">                
+            <p>V3 02/020/2021</p>    
+            <ol>
+                <li>Removed uneeded V1 and V2 code from files</li>
+                <li>Organized divs into containers and renamed in HTML</li>
+                <li>Set containers, divs, items as flex boxes</li>
+                <li>Added media queries, condenses CSS into mediaqueriesstyles.css</li>
+                <li>Positioned flex boxes according to viewport</li>
+                <li>Created table for options.html</li>
+            </ol>    
+        </div>
+    </div>
+    
+    <div class="containerFooter">
+        <footer>
+            <p>designed by &#9909; archristophel</p>
+            <p>Questions or Comments about the site? Email:
+            <a href="mailto:example@example.com?subject=Canoe Trip">example@example.com</a></p>
+        </footer>
+    </div>
+
 </body>
+
 </html>

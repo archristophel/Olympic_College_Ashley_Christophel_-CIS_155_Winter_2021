@@ -1,42 +1,990 @@
 @charset "utf=8";
 
+@font-face {
+    
+        font-family: 'Varela Round';
+	src: url('varela-round-v13-latin-regular.woff2') format('woff2'),
+         url('varela-round-v13-latin-regular.woff') format('woff'),
+         url('varela-round-v13-latin-regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    
+        font-family: 'Roboto';
+	src: url('roboto-v20-latin-regular.woff2') format('woff2'),
+         url('roboto-v20-latin-regular.woff') format('woff'),
+         url('roboto-v20-latin-regular.ttf') format('truetype');
+
+}
+
 /*
-    Author:     Ashley Christophel
-    Assignment: V3
-    Date:       02/07/2021
-    Filename:   mediaqueriesstyles.css
+
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   mediaqueriesstyles.css
+
+USE THIS FILE FOR ALL MEDIA QUERY STYLES
+
 */
 
-/* ===============================================================================
-        Base Styles
-   ===============================================================================
+/* GENERIC BORDER STYLE */
+
+/*
+border-width: 2px;
+border-style: double;
+border-color: teal;
 */
 
 
-/* ===============================================================================
-        Mobile Styles:  0   to  480 pixels
-   ===============================================================================
+/*
+===============================================================================
+        BASE STYLES
+===============================================================================
+*/
+
+
+/* BASE STRUCTURAL STYLES */
+
+html {
+
+        background-color: rgb(44, 80, 88);
+        height: 100%;
+        margin: auto;
+        width: auto;
+        overflow: auto;
+
+}
+
+body {
+
+        background-color: rgb(239, 226, 195);
+        background-color: hsl(42, 59.7%, 85.1%);
+        margin: auto;
+        overflow: auto;
+        max-width: 65%;
+        min-height: 100%;
+
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        text-align: center;
+
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+}
+
+header {
+
+        width: 100%;
+        height: fit-content;
+
+}
+
+header > img {
+
+        display: block;
+        width: 100%;
+        height: auto;
+
+}
+
+
+/* BASE HORIZONTAL NAVIGATION STYLES */
+
+nav.horizontal {
+
+	height: auto;
+
+}
+
+nav.horizontal ul {
+
+	width: 100%;
+        background-color: rgb(157, 68, 74);
+        background-color: hsl(356, 39.6%, 44.1%);
+
+}
+
+nav.horizontal li {
+
+        display: block;
+
+        padding: 5px;
+        margin: 0px;
+
+        font-size: 100%;
+	line-height: 20px;
+        font-weight: bold;
+        text-align: center;	
+
+}
+
+nav.horizontal li a {
+
+        display: block;
+
+        padding: 0px;
+        margin: 0px;
+
+        color: rgb(239, 226, 195);
+        color: hsl(42, 59.7%, 85.1%);
+
+}
+
+nav.horizontal a:link {
+    
+        color: rgb(250, 247, 239);
+        color: hsl(44, 52.4%, 95.9%);
+
+}
+
+nav.horizontal a:visited {
+    
+        color: rgb(44, 80, 88);
+        color: hsl(191, 33.3%, 25.9%);
+
+}
+
+nav.horizontal a:hover {
+    
+        color: rgb(239, 226, 195);
+        color: hsl(42, 57.9%, 85.1%);
+
+}
+
+nav.horizontal a:active {
+    
+        text-decoration: underline;
+
+}
+
+
+/* BASE DIV STYLE */
+
+/*
+
+M5LO5 - Demonstrate the use of flexboxes on a web page
+        (CSS document where you use flexboxes; explain
+        their impact on the page's layout; this can be
+        a new page or a redo of an existing page) 
+           
+        Example of flex boxes. I have set all of the divs
+        to be flexboxes, and have positioned them in
+        containers so I can individually arranged them
+        according to the viewport.
+ 
+*/
+
+div {
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+}
+
+
+div.containerHeader1 {
+
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+        flex-basis: 100%;
+        position: relative;
+        width: 100%;
+
+}
+
+div.containerHeader2 {
+
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+
+}
+
+/*
+
+M5LO7 - Demonstrate use of properties of flexbox containers
+        (CSS, document what flexbox container properties you
+        use and their impacts, for one CSS selector using them)
+
+        Example of flexbox container. This container groups the
+        itemPricing and itemContacts flexboxes together and
+        separates them from the header container.
+
+*/
+
+div.containerHome {
+
+        display: inline;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+
+        flex-basis: 100%;
+        position: relative;
+        width: 100%;
+
+}
+
+div.containerAbout {
+
+        display: inline;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+
+        flex-basis: 100%;
+        position: relative;
+        width: 100%; 
+
+}
+
+/*
+
+M5LO6 - Demonstrate use of properties of flexbox items (CSS,
+        document what flexbox item properties you use and their
+        impacts, for one CSS selector using them)
+
+        Example of flexbox item properties. I used flex-flow to
+        group two headings together and arrange them in a column.
+
+*/
+
+div.itemHeadings1 {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+
+        position: relative;
+        width: 100%;
+        justify-content: center;
+
+}
+
+div.itemHeadings2 {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+
+        position: relative;
+        width: 100%;
+        justify-content: center;
+
+}
+
+div.itemPricing {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+
+        position: relative;
+
+        height: auto;
+        line-height: 25px;
+
+}
+
+div.itemContacts {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        line-height: 25px;
+ 
+}
+
+div.itemV1 {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+
+}
+
+div.itemV2 {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+       
+}
+
+div.itemV3 {
+
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+     
+}
+
+div.containerFooter {
+        
+        position: relative;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+
+        bottom: 0px;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+
+        background-color: rgb(116, 142, 64);
+        background-color: hsl(80, 37.9%, 40.4%);
+
+        font-size: 85%;
+        text-align: center;
+        font-weight: bold;
+
+}
+
+
+/* BASE TABLE STYLES */
+
+/*
+
+M6LO7 - Demonstrate how to format a table with CSS (CSS, group
+        your table styles together and note the overall impact
+        they have on the HTML)
+
+        Example of formatiing a table. Here I have a table
+        container. I have used thead, tbody, tfooter, th, td,
+        and tr elements to arrange the html into a table, set
+        the background colors, cell dimensions, and table padding. 
+
+*/
+
+table.options {
+
+        width: 100%;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+        background-color: rgba(239, 226, 195, 0.75);
+        border: 5px double rgb(44, 80, 88);
+
+        font-size: 75%;
+
+}
+
+
+/* BASE TABLE CELL STYLES */
+
+table.options th, table.options td {
+
+        vertical-align: center;
+        line-height: 20px;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(44, 80, 88);
+
+}
+
+
+/* BASE TABLE ROW STYLES */
+
+table.options thead {
+
+        background: rgba(116, 142, 64, 0.75);
+        color: black;
+    
+}
+    
+table.options thead tr {
+
+        height: 30px;
+    
+}
+    
+table.options tbody tr {
+
+        height: 40px;
+    
+}
+
+table.options tfoot {
+
+        background: rgba(44, 80, 88, 0.75);
+    
+}
+
+
+/* BASE TABLE COLUMN STYLES */
+    
+col#firstCol {
+
+        background: rgba(157, 68, 74, 0.75);
+        width: 20%;
+ 
+}
+    
+col.priceCols {
+
+        width: 20%;
+ 
+}
+
+
+/* BASE HEADING AND TEXT STYLES */
+
+h1 {
+        
+        width: 100%;
+        height: max-content;
+
+        padding: 0px;
+        margin: 0px;
+
+        color: rgb(44, 80, 88);
+        color: hsl(191, 33.3%, 25.9%);
+        font-family: 'Varela Round', serif;
+        text-align: center;
+
+}
+
+h2 {
+        
+        width: 100%;
+        height: max-content;
+
+        padding: 0px;
+        margin: 0px;
+
+        color: rgb(116, 142, 64);
+        color: hsl(80, 37.9%, 40.4%);
+        font-family:  'Varela Round', serif;
+        text-align: center;  
+
+}
+
+h3 {
+
+        width: 100%;
+        height: max-content;
+
+        padding: 0px;
+        margin: 0px;
+
+        color: rgb(157, 68, 74);
+        color: hsl(356, 39.6%, 44.1%); 
+        font-family:  'Varela Round', serif;       
+
+}
+
+p {
+
+        width: 100%;
+        height: max-content;
+
+        font-size: 100%;
+        line-height: 20px;
+
+}
+
+ol {
+
+        width: 100%;
+        height: max-content;
+
+        font-size: 100%;
+        line-height: 20px;
+        list-style-type: circle;
+        text-align: left;
+
+}
+
+a[href^="mailto"] {
+        
+        color: rgb(250, 247, 239);
+        color: hsl(44, 52.4%, 95.9%);
+        text-decoration: none;
+
+}
+
+a[href^="tel"], [href^="sms"] {
+        
+        color: rgb(250, 247, 239);
+        text-decoration: none;
+
+}
+
+
+/* 
+===============================================================================
+	MOBILE STYLES: 0px - 480px
+===============================================================================
+*/
+
+/*
+
+M5LO3 - Use media queries to format a page differently
+        for phones vs. PCs. (CSS, note where these are
+        in your CSS and describe the overall impact they
+        have on the site) 
+           
+        Example of media queries. The CSS here is
+        optimized for mobile devices and allows for
+        exclusively vertical scrolling.
+
 */
 
 @media only screen and (max-width: 480px) {
 
-}
+        body {
+                                
+                max-width: 100%;
+                min-height: 100%;
+       
+        }       
 
-/* ===============================================================================
-        Tablet Styles:  481px and greater
-   ===============================================================================
+        nav.horizontal ul {
+                
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: column wrap;
+                flex-flow: column wrap;
+        
+        }
+            
+        nav.horizontal li {
+                
+                -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+                border: 1px solid rgb(116, 142, 64);
+        }
+
+        div.itemHeadings1 {
+
+                padding: 15px;
+
+        }
+
+        div.itemHeadings2 {
+
+                padding-top: 25px;
+
+        }
+
+        h1 {
+        
+                font-family: 'Varela Round', serif;
+                font-size: 250%;
+                line-height: 50px;
+                text-shadow: rgb(116, 142, 64) -2px 1.5px 2.5px;
+
+        }
+                
+        h2 {
+
+                font-family:  'Varela Round', serif;
+                font-size: 167%;
+                line-height: 75px;
+                text-shadow: rgb(51, 51, 51) -1px 1px 2.5px; 
+
+        }
+
+        div.itemPricing {
+
+                width: 100%;
+                padding: 15px;
+        
+        }
+
+        div.itemContacts {
+
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+          
+        }
+
+        div.itemV1 {
+
+                width: 100%;
+                padding: 25px;
+                text-align: center;
+
+        }
+
+        div.itemV2 {
+
+                width: 100%;
+                padding: 25px;
+                text-align: center;
+
+        }
+
+        div.itemV3 {
+
+                width: 100%;
+                padding: 25px;
+                text-align: center;
+
+        }
+
+        h3 {
+        
+                padding: 10px;
+                
+                text-align: center;
+
+                font-size: 125%;
+                line-height: 30px;
+                text-shadow: rgb(51, 51, 51) -1px 1px 3px;       
+                
+        }
+
+        p {
+                
+                padding: 5px;
+        
+                font-size: 100%;
+                line-height: 20px;
+        
+        }
+
+        ol {
+
+                padding: 25px;
+
+                font-size: 100%;
+                line-height: 20px;
+        
+        }
+
+}        
+
+
+/*
+===============================================================================
+	TABLET STYLES: 481px - 768px
+===============================================================================
 */
 
-@media only screen and (max-width: 481px) {
-    
+@media only screen and (min-width: 481px) {
+
+        html {
+                
+                background: rgb(44, 80, 88);
+     
+        }
+
+        body {
+                
+                max-width: 95%;
+                min-height: 100%;
+                
+                box-shadow: rgb(51, 51, 51) 5px 0px 5px,
+                            rgb(51, 51, 51) -5px 0px 5px;
+      
+        }
+
+        nav.horizontal ul {
+        
+                display: -webkit-flex;
+                display: flex;
+      
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+      
+                height: 40px;
+                
+        }    
+
+        nav.horizontal {
+                
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        
+        }
+            
+        nav.horizontal li {
+                
+                -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        
+        }
+
+        div.itemHeadings1 {
+
+                padding: 20px;
+
+        }
+
+        div.itemHeadings2 {
+
+                padding-top: 35px;
+                padding-left: 25px;
+                padding-right: 25px;
+
+        }
+
+        div.itemV1 {
+
+                width: 100%;
+                padding: 35px;
+                text-align: center;
+
+        }
+
+        div.itemV2 {
+
+                width: 100%;
+                padding: 35px;
+                text-align: center;
+
+        }
+
+        div.itemV2 {
+
+                width: 100%;
+                padding: 35px;
+                text-align: center;
+
+        }
+
+        h1 {
+        
+                font-family: 'Varela Round', serif;
+                font-size: 375%;
+                line-height: 75px;
+                text-shadow: rgb(116, 142, 64) -2px 1.5px 2.5px;
+
+        }
+                
+        h2 {
+
+                font-family:  'Varela Round', serif;
+                font-size: 167%;
+                line-height: 75px;
+                text-shadow: rgb(51, 51, 51) -1px 1px 2.5px; 
+
+        }
+
+        div.itemPricing {
+
+                float: left;
+
+                width: 46%;
+                padding: 20px;
+                margin: 10px;
+                text-align: left;
+        
+        }
+
+        div.itemContacts {
+
+                float: right;
+
+                width: 46%;
+                padding: 20px;
+                margin: 10px;
+                text-align: right;
+
+        }
+
+        h3 {
+        
+                padding: 7px;
+
+                font-size: 100%;
+                line-height: 20px;
+
+                text-shadow: rgb(51, 51, 51) -1px 1px 3px;       
+        
+        }
+
+        p {
+                
+                padding: 5px;
+        
+                font-size: 100%;
+                line-height: 20px;
+        
+        }
+
+        ol {
+
+                padding: 5px;
+
+                font-size: 100%;
+                line-height: 25px;
+        
+        }
+
+        table.options {
+        
+                margin-top: 10px;
+                margin-right: 50px;
+                margin-bottom: 10px;
+                margin-left: 50px;
+        
+        }
+
 }
 
 
-/* ===============================================================================
-        Desktop Styles:  769px and greater
-   ===============================================================================
+/*
+===============================================================================
+        DESKTOP STYLES:  769px AND GREATER
+===============================================================================
 */
 
-@media only screen and (max-width: 769px) {
-    
+@media only screen and (min-width: 769px) {
+
+        html {
+                
+                background: url(tilebackgroundmercury.png) scroll content-box;
+      
+        }
+            
+        body {
+                
+                max-width: 65%;
+                min-height: 100%;
+                
+                box-shadow: rgb(51, 51, 51) 5px 0px 5px,
+                            rgb(51, 51, 51) -5px 0px 5px; 
+      
+        }
+
+        nav.mainNavigation ul {
+                
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        
+        }
+            
+        nav.mainNavigation li {
+                
+                -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        
+        }
+
+        div.itemHeadings1 {
+
+                padding: 30px;
+
+        }
+
+        div.itemHeadings2 {
+
+                padding-right: 30px;
+                padding-left: 30px;
+
+        }
+
+        div.itemV1 {
+
+                width: 100%;
+                padding: 55px;
+                text-align: center;
+
+        }
+
+        div.itemV2 {
+
+                width: 100%;
+                padding: 55px;
+                text-align: center;
+
+        }
+
+        div.itemV3 {
+
+                width: 100%;
+                padding: 55px;
+                text-align: center;
+
+        }
+
+        h1 {
+
+                font-size: 500%;
+                line-height: 100px;
+                text-shadow: rgb(116, 142, 64) -4px 3px 5px;
+
+        }
+        
+        h2 {
+
+                font-size: 332%;
+                line-height: 67px;
+                text-shadow: rgb(51, 51, 51) -2px 2px 5px;
+
+        }
+
+        div.itemPricing {
+
+                float: left;
+
+                width: 46%;
+                padding: 20px;
+                margin: 10px;
+                text-align: left;
+        
+        }
+
+        div.itemContacts {
+
+                float: right;
+
+                width: 46%;
+                padding: 20px;
+                margin: 10px;
+                text-align: right;
+        
+        }
+
+        h3 {
+        
+                font-size: 150%;
+                line-height: 40px;
+                text-shadow: rgb(51, 51, 51) -1px 1px 3px;       
+                
+        }
+
+        p {
+                
+                padding: 5px;
+        
+                font-size: 100%;
+                line-height: 20px;
+        
+        }
+
+        ol {
+
+                padding: 5px;
+
+                font-size: 100%;
+                line-height: 25px;
+        
+        }
+
+        table.options {
+        
+                margin-right: 75px;
+                margin-left: 75px;
+        
+        }
+
 }

@@ -1,119 +1,80 @@
-<!DOCTYPE html>                                                                                             <!-- M1LO6 - Example of basic HTML tag, the 'document type declaration,' specifies markup language used in document -->
+<!DOCTYPE html>
 <html>
 <head>
     
-    <!-- 
-        Author:     Ashley Christophel
-        Assignment: V2
-        Date:       01/30/2021
-        Filename:   canoe_index.html
-    -->
+<!-- 
+
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   canoe_index.html
+
+-->
 
     <meta charset="utf-8" />
-    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="reset.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
-    <link href="divstyles.css" rel="stylesheet" />                                                          <!-- M2LO4 - Example of external stylesheet -->
-    <link href="textstyles.css" rel="stylesheet" />                                                         <!-- M1LO8 - Example of external stylesheet -->
+    <link href="mediaqueriesstyles.css" rel="stylesheet" />
     <title>Canoe Trip Index</title>
+    
 </head>
 
 <body>
     <header>
-        <img src="" alt="" />         <!-- M1LO9 - Example of an inline image --><!-- M1LO13 - Example of external hyperlink -->
-        <nav class="mainNavigation">
-            <ul class="mainmenu">                                                                                            <!-- M1LO12 - Example of navigation using unordered list -->
+        <img src="headerimg.png" alt="group" />
+        <nav class="horizontal">
+            <ul>
                 <li><a href="canoe_index.html">Home</a></li>
-                <li><a href="#" class="submenuTitle">Classes &#9654;</a>
-                    <ul class="submenu">
-                       <li><a href="#">Infants</a></li>
-                       <li><a href="#">Toddlers</a></li>
-                       <li><a href="tf_prek.html">Pre-K</a></li>
-                       <li><a href="#">After School</a></li>
-                    </ul>
-                 </li>
-                 <li><a href="#" class="submenuTitle">Parents &#9654;</a>
-                    <ul class="submenu">
-                        <li><a href="tf_articles.html">Articles</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Forms</a></li>
-                        <li><a href="#">Legal</a></li>                 
-                    </ul>
-                </li>                                                    <!-- M1LO13 - Example of site navigation hyperlink -->
                 <li><a href="register.html">Register</a></li>
-                <li><a href="#" class="submenuTitle">About Us &#9654;</a>
-                    <ul class="submenu">
-                       <li><a href="#">History</a></li>
-                       <li><a href="#">Accreditation</a></li>
-                       <li><a href="#">Reviews</a></li>
-                    </ul>
-                 </li>
                 <li><a href="options.html">Options</a></li>
                 <li><a href="info.html">Info</a></li>
                 <li><a href="directions.html">Directions</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>                                                     <!-- M1LO13 - Example of site navigation hyperlink -->
+                <li><a href="about.html">About</a></li>
             </ul>
-        </nav>          
+        </nav>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col-3-4">                                                                                   <!-- FIRST ROW -->
-        <h1>Annual River Trip</h1>
-        <h2>July 16-18, 2021</h2>
+  
+    <div class="containerHeader1">
+        <div class="itemHeadings1"> 
+            <h1>Annual River Trip</h1>
+            <h2>July 16-18, 2021</h2>
+        </div>
     </div>
-    <div class="col-1-4">
-        <h3>Who to Contact:</h3>
-            <h4>Geordi LaForge</h4>
-            <p>Call: <a href="tel:+15555555555">(201) 867-5309</a></p>
-            <p>Text: <a href="sms:+15555555555">(201) 867-5309</a></p>
-            <h4>Data</h4>
-            <p>Call: <a href="tel:+15555555555">(311) 555-2368</a></p>
-            <p>Text: <a href="sms:+15555555555">(311) 555-2368</a></p>
-            <h4>Tasha Yar</h4>
-            <p>Call: <a href="tel:+15555555555">(636) 555-3226</a></p>
-            <p>Text: <a href="sms:+15555555555">(636) 555-3226</a></p>            
-    </div>
-</div>
-<div class="row">                                                                                           <!-- SECOND ROW A -->
-    <div class="col-4-4">
-        <p>Here is a paragraph about the dates and some general info leading into pricing:</p>   
-        <div class="row">                                                                                   <!-- SECOND ROW B -->
-            <div class="col-2-4">     
-                <h3>Total Price Per Couple</h3>
-                <p>This includes:</p>
-                <ol>                                                                                        <!-- M1LO7 - Example of an ordered list -->
+    <div class="containerHome">
+        <div class="itemPricing">    
+            <h3>Total Price Per Couple</h3>
+            <p>This includes:</p>
+                <ol>
                     <li>Camping for 2 Nights (Friday and Saturday)</li>
                     <li>Canoe Rental for Greenwood (Long Trip)</li>
                     <li>Community Firewood</li>
                     <li>Games & Prizes</li>
                 </ol>
-            </div>  
         </div>
-    </div>       
-</div>
+        <div class="itemContacts">   
+            <h3>Who to Contact:</h3>
+            <h4>Person One</h4>
+            <p>Call: <a href="tel:+15555555555">(201) 867-5309</a></p>
+            <p>Text: <a href="sms:+15555555555">(201) 867-5309</a></p>
+            <h4>Person Two</h4>
+            <p>Call: <a href="tel:+15555555555">(311) 555-2368</a></p>
+            <p>Text: <a href="sms:+15555555555">(311) 555-2368</a></p>
+            <h4>Person Three</h4>
+            <p>Call: <a href="tel:+15555555555">(636) 555-3226</a></p>
+            <p>Text: <a href="sms:+15555555555">(636) 555-3226</a></p>            
+        </div>   
+    </div>
 
-<div class="row">                                                                                           <!-- THIRD ROW FOOTER-->
-    <footer>
-        <p>designed by &#9909; archristophel</p>                                                            <!-- M1L10 - Example of special character from extended character set using entity number -->
-        <p>Questions or Comments about the site? Email:
-       <a href="mailto:example@example.com?subject=Canoe Trip">example@example.com</a></p>
-    </footer>
-</div>
+    <div class="containerFooter">
+        <footer>
+            <p>designed by &#9909; archristophel</p>
+            <p>Questions or Comments about the site? Email:
+            <a href="mailto:example@example.com?subject='Canoe Trip'">example@example.com</a></p>
+        </footer>
+    </div>
+
 </body>
 
 </html>

@@ -1,42 +1,68 @@
 @charset "utf=8";
+
 /*
-    Author:     Ashley Christophel
-    Assignment: V2
-    Date:       02/01/2021
-    Filename:   reset.css
+
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   reset.css
+
 */
 
 
-/* Structural Styles */
+/* 
+===============================================================================
+        RESET STYLES
+===============================================================================
+*/
 
-html, head, body, header, nav, ul, li, div, figure, p, ol, img {        /* M3LO1 - Example of reset stylesheet */
-    display: block;
+figcaption, figure,
+footer, header, main, nav, ol {
+
+   display: block;
+
+}
+
+body, div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, table, ul {
+
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+
 }
 
 
-/* Typographic Styles */
+/* Set the default page element styles */
 
-body, footer, header, html, img,
-li, main, nav, ul, div {
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    border-width: 0;
-    vertical-align: baseline;
-    -webkit-box-sizing: border-box;                                     /* M3LO11 - Example of prefix style browser extension. This allows browsers to support new features before fully supported in all browsers. */
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;    
+body {
+
+   line-height: 0px;
+
 }
 
-nav ul {                                                                /* REMOVES LIST MARKERS FROM ALL LIST ITEMS IN NAV LISTS */
-    list-style: none;
-    list-style-image: none;
+ul, ol {
+
+   list-style: none;
+
 }
 
-nav a {                                                                 /* REMOVES LIST MARKERS FROM ALL HYPERLINK LIST ITEMS IN NAV LISTS */
-    text-decoration: none;
+nav ul {
+
+   list-style: none;
+   list-style-image: none;
+
 }
 
-body {                                                                  /* SETS THE DEFAULT LINE HEIGHT TO ELEMENT */
-    line-height: 0;
+nav a {
+
+   text-decoration: none;
+
 }
