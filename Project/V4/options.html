@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!--
+
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   options.html
+
+-->
+
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="mediaqueriesstyles.css" rel="stylesheet" />
+    <title>Canoe Trip Index</title>
+    
+</head>
+
+<body>
+    <header>
+        <img src="headerimg.png" alt="group" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="canoe_index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="options.html">Options</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--
+
+M6LO3 - Demonstrate how to create a table (HTML, explain table's
+        purpose; it needs to be appropriate data for a table, and
+        have at least 2 columns and 3 rows, appropriate use of
+        thead/tbody/tfooter, and cells using th/td appropriately)
+
+        Example of a table. This table shows the cost of different
+        expenses for the trip.
+         
+-->
+
+    <table class="options">
+        <colgroup>
+            <col id="firstCol" />
+            <col class="priceCols" span="7" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Daily</th>
+                <th>One-Time</th>
+                <th>Short Trip</th>
+                <th>Long Trip</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Campsite Fee</th>
+                <td colspan="1">$16/person</td>
+                <td colspan="3"></td>
+            </tr>    
+
+<!--
+
+M6LO4 - Demonstrate how to span multiple rows or multiple
+        columns in a table (HTML, document where you write
+        HTML that causes a multi-row or multi-column span;
+        say which one it is as well: row or column, or both)
+
+        Example of spanning multiple columns. I chose to use
+        column spanning in the empty table cells.
+
+-->
+ 
+            <tr>
+                <th>Kayak Rental</th>
+                <td colspan="2"></td>
+                <td colspan="1">$0/Person</td>
+                <td colspan="1">$0/Person</td>
+            </tr>
+            <tr>
+                <th>Canoe Rental</th>
+                <td colspan="2"></td>
+                <td colspan="">$0/Two People</td>
+                <td colspan="">$0/Two People</td>             
+            </tr>
+            <tr>
+                <th>Firewood</th>
+                <td colspan="1"></td>
+                <td colspan="1">$0/Bundle</td>
+                <td colspan="2"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+        </tfoot>    
+    </table> 
+
+    <div class="containerFooter">
+        <footer>
+            <p>designed by &#9909; archristophel</p>
+            <p>Questions or Comments about the site? Email:
+            <a href="mailto:example@example.com?subject=Canoe Trip">example@example.com</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

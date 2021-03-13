@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+
+Author:     Ashley Christophel
+Assignment: V3
+Date:       02/05/2021
+Filename:   register.html
+
+-->
+    
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Rifle River, canoe trip, Sterling, Michigan, MI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="mediaqueriesstyles.css" rel="stylesheet" />
+    <title>Canoe Trip Register</title>
+    
+</head>
+
+<body>
+    <header>
+        <img src="headerimg.png" alt="group" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="canoe_index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="options.html">Options</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containerRegister">
+        <p>Required fileds are denoted by an asterisk *</p>
+    
+        <form id="register" action="" method="">
+            
+            <fieldset id="contactInfo">
+                <legend>Contact Info</legend>
+
+                <fieldset class="subOptions">
+                    <legend>First Person</legend>
+<!--
+M7LO5 - Demonstrate the use of a text box in a form
+-->
+                    <div class="formRow">
+                        <label for="name1">First & Last Name *</label>
+                        <input name="registerName1" id="name1" type="text" placeholder="First & Last Name" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="phone1">Phone Number *</label>
+                        <input name="registerPhone1" id="phone1" type="tel" placeholder="(555)555-5555" 
+                        pattern="^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$" />
+                    </div>
+
+                    <div class="formRow">            
+                        <label for="mail1">Email *</label>
+                        <input name="registerEmail1" id="mail1" type="email" placeholder="Email"/>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="subOptions">
+                    <legend>Second Person</legend>    
+
+                    <div class="formRow">
+                        <label for="name2">First & Last Name</label>
+                        <input name="registerName2" id="name2" type="text" placeholder="First & Last Name" />
+                    </div>
+
+                    <div class="formRow">    
+                        <label for="phone2">Phone Number</label>
+                        <input name="registerPhone2" id="phone2" type="tel" placeholder="(555)555-5555" />
+                    </div>
+                    
+                    <div class="formRow">    
+                        <label for="mail2">Email</label>
+                        <input name="registerEmail2" id="mail2" type="email" placeholder="Email" />
+                    </div>
+
+                </fieldset>    
+            </fieldset>
+
+            <fieldset id="campType">
+                <legend>Camping Accomodations</legend>
+
+                <fieldset class="subOptions">
+                    <legend>Are You Bringing a Camper?</legend>  
+<!--
+M7LO6 - Demonstrate the use of check boxes in a form
+-->                    
+                    <div class="formRow">
+                        <label for="camper">Yes, I am bringing a camper.</label>
+                        <input name="campCamper" id="camper" type="checkbox" />
+
+                        <label for="camperSpinner">How long is your Camper in feet?</label>
+                        <input name="camperSize" id="camperSpinner" type="number" step="4" min="8" max="40" placeholder="0" />
+                    </div>
+
+                </fieldset>    
+                <fieldset class="subOptions">
+                    <legend>Are You Bringing Tents?</legend>    
+                    
+                    <div class="formRow">
+                        <label for="tent">Yes, I am bringing a tent (or tents).</label>
+                        <input name="campTent" id="tent" type="checkbox" />
+                    
+                        <label for="tentSpinner">How many tents are you bringing?</label>
+                        <input name="tentAmount" id="tentSpinner" type="number" step="1" min="0" max="2" placeholder="0" />
+                    </div>
+
+                </fieldset>
+            </fieldset>    
+             
+            <fieldset id="tripType">
+                <legend>Are You Going on the Saturday River Trip?</legend>
+            
+                <fieldset class="subOptions">
+                    <legend>No, I am not going on the Saturday river trip.</legend>
+<!--   
+M7LO7 - Demonstrate the use of radio buttons in a form
+-->
+                    <div class="formRow">
+                        <label for="none">Not Going on River</label>
+                        <input name="riverOpt" id="none" type="radio" />
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset class="subOptions">
+                    <legend>Yes, I am going on the Saturday river trip.</legend>
+                
+                    <div class="formRow">
+                        <label for="short">Short Trip (13 miles)</label>
+                        <input name="riverOpt" id="short" type="radio" />
+            
+                        <label for="long">Long Trip (26 miles)</label>
+                        <input name="riverOpt" id="long" type="radio" />
+                    </div>
+
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset id="boatType">
+                <legend>Would You Like to Reserve a Canoe or Kayak(s)?</legend>
+
+                <fieldset class="subOptions">
+                    <legend>Canoe</legend>
+
+                    <div class="formRow">
+                        <label for="canoe">Reserve One Canoe</label>
+                        <input name="boatOpt" id="canoe" type="radio" />
+                    </div>
+                    
+                </fieldset>
+            
+                <fieldset class="subOptions">
+                    <legend>Kayak (s)</legend>
+
+                    <div class="formRow">
+                        <label for="kayak1">Reserve One Kayak</label>
+                        <input name="boatOpt" id="kayak1" type="radio" />
+            
+                        <label for="kayak2">Reserve Two Kayaks</label>
+                        <input name="boatOpt" id="kayak2" type="radio" />
+                    </div>
+                
+                </fieldset>
+
+                <p>Sit-on-top kayaks and sit-inside kayaks are usually available, and
+                   can be requested from the campground office at check-in, but preference
+                   is not guaranteed to be available.</p>
+
+            </fieldset>
+<!--
+M7LO10 - Demonstrate the use of a submit button in a form
+-->
+            <div id="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Cancel" />
+            </div>
+
+        </form>
+    </div>    
+
+    <div class="containerFooter">
+        <footer>
+            <p>designed by &#9909; archristophel</p>
+            <p>Questions or Comments about the site? Email:
+            <a href="mailto:example@example.com?subject=Canoe Trip">example@example.com</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
